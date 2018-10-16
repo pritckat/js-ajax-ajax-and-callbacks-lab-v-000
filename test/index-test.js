@@ -1,24 +1,24 @@
 // const expect = require('expect')
-// 
+//
 // const fs = require('fs')
 // const jsdom = require('mocha-jsdom')
 // const path = require('path')
 // var sinon = require('sinon')
-// 
+//
 // describe('index.js', () => {
 //   const html = fs.readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf-8')
 //   const scripts = [
 //     path.resolve(__dirname, '..', 'index.js'),
 //     path.resolve(__dirname, '..', 'jquery-3.1.0.min.js')
 //   ]
-// 
+//
 //   let $
 //   jsdom({ html, scripts })
-// 
+//
 //   before(() => {
 //     window.$ = require('jquery')
 //   })
-// 
+//
 //   describe('index.html', () => {
 //     it('has the right elements', () => {
 //       expect(document.getElementsByTagName('a')[0].innerHTML).toMatch(/(S|s)earch/)
@@ -27,17 +27,17 @@
 //       expect(document.getElementById('details')).toExist()
 //     })
 //   })
-// 
+//
 //   describe('displayError', () => {
 //     it('sets the errors div content', () => {
 //       displayError()
 //       expect(window.$('#errors').html()).toMatch(/error/)
 //     })
 //   })
-// 
+//
 //   describe('ajax functions', () => {
 //     let xhr, requests
-// 
+//
 //     before(() => {
 //       xhr = sinon.useFakeXMLHttpRequest()
 //       window.XMLHttpRequest = xhr
@@ -49,7 +49,7 @@
 //     after(() => {
 //       xhr.restore()
 //     })
-// 
+//
 //     describe('searchRepositories', () => {
 //       it('calls out to the github search API and displays results', () => {
 //         window.$('#searchTerms').val('tetris')
@@ -59,7 +59,7 @@
 //         expect(window.$('#results').html()).toMatch(/Tetris/)
 //       })
 //     })
-// 
+//
 //     describe('showCommits', () => {
 //       it('calls the github commits api and displays results', () => {
 //         const el = { dataset: { repository: "repo", owner: "owner" } }
@@ -71,9 +71,9 @@
 //     })
 //   })
 // })
-// 
+//
 // const contentType = { "Content-Type": "application/json" }
-// 
+//
 // function commitsData() {
 //   const commits = [
 //   {
